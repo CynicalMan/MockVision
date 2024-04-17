@@ -1,0 +1,24 @@
+.header {
+  background-color: #222222;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding : 1%;
+  margin-bottom: 3vh;
+  
+  
+}
+
+.header-brand {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
