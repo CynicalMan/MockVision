@@ -28,7 +28,7 @@ cors.init_app(app)
 #     else:
 #         return "POST Error 405 Method Not Allowed"
 
-global_no = -1
+global_no = 0
 
 @app.route('/design',
            methods=['POST', 'GET', 'PUT', 'DELETE', 'PATCH', 'OPTIONS',
@@ -41,7 +41,7 @@ def design():
         name = "output"
         no_samples = 4
         print(data)
-        res = generate_floor_plan(data, output_name=name,no_samples=no_samples)  # 1
+        res = generate_floor_plan(data, output_name=name, no_samples=no_samples)  # 1
         # sleep(5)
         return "res"
         # return "POST request received. Thank you demon!"
@@ -64,6 +64,7 @@ def convert3d(sample_no):
 @app.route('/render3D', methods=['GET'])
 def render3d():
     if request.method == 'GET':
+        print(global_no)
         file_path = f"outputs/rooms_polygons_{global_no}.json"
 
         with open(file_path, "r") as json_file:
