@@ -28,7 +28,7 @@ cors.init_app(app)
 #     else:
 #         return "POST Error 405 Method Not Allowed"
 
-global_no = 0
+global_no = -1
 
 @app.route('/design',
            methods=['POST', 'GET', 'PUT', 'DELETE', 'PATCH', 'OPTIONS',
