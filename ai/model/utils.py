@@ -324,7 +324,14 @@ def process_input_boundaries_model(model, inner_poly, door_poly, bedrooms,
             out_kitchen.append(bx)
 
     json_data = json.dumps(
-        {"walls": [list(lines.exterior.coords)] + [list(interior.coords) for interior in lines.interiors]})
+        {
+            "walls": [list(lines.exterior.coords)] + [list(interior.coords) for interior in lines.interiors],
+            "bedrooms": [list(bedroom.exterior.coords) for bedroom in out_bedrooms],
+            "bathrooms": [list(bathroom.exterior.coords) for bathroom in out_bathrooms],
+            "kitchen": [list(kitchen.exterior.coords) for kitchen in out_kitchen],
+            "living": [list(left_living.exterior.coords)],
+        }
+    )
     file_path = f"outputs/rooms_polygons_{output_name}.json"
 
     with open(file_path, "w") as json_file:
