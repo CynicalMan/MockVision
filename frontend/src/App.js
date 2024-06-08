@@ -6,6 +6,7 @@ import Studio from "./pages/studio/studio";
 import Footer from './components/footer/footer';
 import View2D from "./pages/view2D/view2D";
 import View3D from "./pages/view3D/view3D";
+import Home from "./pages/Home/home"
 
 
 function App() {
@@ -18,9 +19,10 @@ function App() {
           {/* {window.location.pathname !== "/" && <Header />} */}
         </div>
         <Routes>
-          <Route path="/" element={<Studio />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/view2D" element={<View2D/>} />
           <Route path="/view3D" element={<View3D/>} />
+          <Route path="/Drawing" element={<Studio />} />
         </Routes>
 
         <div>

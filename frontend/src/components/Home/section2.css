@@ -1,0 +1,141 @@
+.section2{justify-content: center;
+    margin-top: 25vh;
+    padding: 20px 14%;
+    width: 100%;
+}
+.section2 h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 10vh;
+    flex-wrap: wrap;
+    position: relative;
+    
+}
+
+
+.features div{
+    width: 30%;
+    height: 90%;
+    padding: 15px 20px;
+    margin: 5px;
+    background-color: beige;
+    border-radius:20px ;
+    position: relative;
+    
+    
+}
+.features div h2{
+    font-size: 25px;
+    color: black;
+}
+.features div p{
+    font-size: 18px;
+    color: rgb(118, 118, 118);
+    text-shadow: 0px 1px 10px #0000006a;
+    
+}
+
+
+.features .div1{
+    background-color:#399abd44;
+    /* box-shadow: 5px 5px 12px 4px #348bab; */
+
+    position: relative;
+    
+    
+}
+
+.features .div1::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(./ai.png);
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 20%;
+    transition: 0.3s;
+}
+
+.features .div2::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(./clock.png);
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 20%;
+    transition: 0.3s;
+}
+
+.features .div3::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-image: url(./blueprint.png);
+    background-size: 50% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 20%;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+.features .div2{
+    background-color:#39bdb63d ;
+    /* box-shadow: 5px 5px 12px 4px #309c97; */
+}
+
+.features .div3{
+    background-color:#3970bc50 ;
+    /* box-shadow: 5px 5px 12px 4px #305e9e; */
+}
+
+/* .features .img1{
+
+    background-image: url(./ai.png);
+    background-size:60% 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.features .img2{
+    
+    background-image: url(./blueprint.png);
+    background-size:60% 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.features .img3{
+    
+    background-image: url(./clock.png);
+    background-size:60% 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+} */

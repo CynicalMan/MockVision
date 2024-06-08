@@ -5,6 +5,12 @@ import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { getGridRect, submitData, getText, updateText } from "./helpers";
 import * as turf from "@turf/turf";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDoorClosed } from '@fortawesome/free-solid-svg-icons'
+
+
+
+
 
 import "./studio.css";
 // import { useNavigate } from 'react-router-dom';
@@ -1131,19 +1137,33 @@ class PlanifyDraw extends Component {
 
   render() {
     return (
-      <div ref={this.spinner} className="container">
+      <>
+        <div className="notes">
+          <p>Notes</p>
+          <ul>
+            <li>Draw your home boundaries</li>
+            <li>The area must be larger than 60 meters</li>
+            <li>You must add the door</li>
+          </ul>
+        </div>
+        
+        <div ref={this.spinner} className="container">
+          <div ref={this.canvasRef} className="canvas-container" />
 
-        <div ref={this.canvasRef} className="canvas-container" />
+          <div className="Buttons">
 
-        <div className="Buttons">
-          <div className="createDesign">
-            <button onClick={this.getPlanData}>Create Design</button>
-          </div>
-          <div className="addDoor">
-            <button onClick={this.setDoorMode}>Add Door</button>
+         
+            <div className="createDesign">
+              <button onClick={this.getPlanData}>Create Design</button>
+            </div>
+            <div className="addDoor">
+              
+            
+              <button onClick={this.setDoorMode}> <FontAwesomeIcon icon={faDoorClosed} />Add Door</button>
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 }

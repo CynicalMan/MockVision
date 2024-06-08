@@ -4,10 +4,10 @@ import "./unityStudio.css"
 
 const UnityStudio = () => {
     const { unityProvider } = useUnityContext({
-        loaderUrl: "UnityFloorPlanTo3D/Build/UnityFloorPlanTo3D.loader.js",
-        dataUrl: "UnityFloorPlanTo3D/Build/UnityFloorPlanTo3D.data",
-        frameworkUrl: "UnityFloorPlanTo3D/Build/UnityFloorPlanTo3D.framework.js",
-        codeUrl: "UnityFloorPlanTo3D/Build/UnityFloorPlanTo3D.wasm",
+        loaderUrl: "UnityFloorPlanTo3D_V3.2/Build/UnityFloorPlanTo3D_V3.2.loader.js",
+        dataUrl: "UnityFloorPlanTo3D_V3.2/Build/UnityFloorPlanTo3D_V3.2.data",
+        frameworkUrl: "UnityFloorPlanTo3D_V3.2/Build/UnityFloorPlanTo3D_V3.2.framework.js",
+        codeUrl: "UnityFloorPlanTo3D_V3.2/Build/UnityFloorPlanTo3D_V3.2.wasm",
     });
 
     return <div className="flex center"><Unity unityProvider={unityProvider} /></div>;

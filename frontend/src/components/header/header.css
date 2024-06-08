@@ -1,24 +1,74 @@
+*{
+  font-family:"Cairo", sans-serif;
+}
+
 .header {
-  background-color: #222222;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
+
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 1% 5%;
   align-items: center;
-  width: 100%;
+
+  box-shadow: 0px 1px 7px 2px black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-image: linear-gradient(to left bottom , #7da9f8,#587fae);
   position: relative;
-  padding : 1%;
-  margin-bottom: 3vh;
-  
-  
+  z-index: 5;
 }
 
 .header-brand {
   color: white;
   font-size: 30px;
   text-align: center;
+  text-decoration: none;
+  text-shadow: 0px 0px 10px #14192d;
+}
+
+.headerUl{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  margin-bottom: 0;
+  color: white;
+
+}
+
+
+.headerUl li{
+  margin: 0 1em;
+  padding: 0.5em;
+  box-sizing: border-box;
+  transition: 0.2s;
+  cursor: pointer;
+
+}
+.headerUl li:hover{
+  box-shadow: inset 0px -5px 0px 0px #8b4513;
+
+
+}
+
+.start{
+
+  color: #9a6016;
+  background-color: #fff1e8;
+  border-radius: 10px;
+}
+
+
+.headerUl li.start:hover{
+  scale: 110%;
+  box-shadow: 0px 0px 11px 1px #9a6016;
+
+
+}
+
+
+
+
+
+ul a{
   text-decoration: none;
 }

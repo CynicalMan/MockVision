@@ -1,0 +1,95 @@
+/* *{
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+.section1{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(to left bottom, #649afbd4, #34485d);
+    padding:  10vh 13%;
+    padding-bottom: 3vh;;
+    position: relative;
+}
+
+
+
+.text{
+    width: 40%;
+    color:white;
+    
+}
+
+.text h1{
+    padding: 5px 0px;
+    font-size: 56px;
+
+}
+.section1 .text p {
+font-size: 0.6em;
+line-height: 150% ;
+
+
+}
+
+.section1  button{
+    width: 100px;
+    height: 30px;
+    margin: 10px 6px;
+
+    font-size: 0.7em;
+    outline: none;
+    border:none;
+    font-family: "Cairo", sans-serif;
+}
+@media  screen and ( max-width:720px) {
+    .section1  button{
+        width: 60px;
+        height: 20px;
+        margin: 5px 3px;
+        
+        font-size: 0.5em;
+        outline: none;
+        border:none;
+        font-weight: 800;
+        
+    }
+}
+.section1  button.CreateNow{
+    background-color:#14192d ;
+    color: white;
+    transition: 0.3s;
+    
+}
+
+.section1  button.CreateNow:hover{
+    box-shadow: 0 0 11px 5px #7ca8f8;
+    background-color: #c66937;
+    color:#14192d;
+
+}
+
+
+.section1  button.explore{
+    color: white;
+    border:solid white 1px;
+    background-color: #14192d00;
+}
+
+
+.section1::after{
+    position: absolute;
+    bottom: -50%;
+    right: 0;
+    content:"" ;
+    width: 60%;
+    height: 140%;
+
+    background-image: url(./3.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
+}

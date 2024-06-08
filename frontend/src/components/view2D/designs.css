@@ -1,72 +1,180 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
- .container{
+/* .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:2vh 10vw;
-    width: 90%;
-    height: 75vh;
-
-
-} 
-
-.imgsContainer{
-    display:flex ;
-    justify-content: center;
-    align-items: center;
+    padding:2vh 0;
     width: 100%;
-    height: 100%;
+
+
+}  */
+
+.imgsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.imgsContainer > * {
+  width: 100%;
+  height: 35vw;
+  background-color: black;
+  margin: 0px 0px;
+  display: flex;
+  align-items: center;
+  padding: 10px 10%;
+  justify-content: space-between;
+  transition: 0.5s;
+  filter:grayscale(70%);
+  background-color: #688ecd;
+  position: relative;
+}
+
+.imgsContainer > *:hover {
+  filter:grayscale(0%);
+  box-shadow: inset 0 0 19px 19px #406bb2e0;
+}
+
+.imgsContainer > * p {
+    display: inline-block;
+    width: 35%;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0px 3px 10px #072556bd;
+  }
+  
+.imgsContainer > * div {
+  width: 40%;
+  height: 90%;
+  margin: 0 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* border:3px #445c7d solid; */
+  border-radius: 10px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.imgsContainer .img0Section p{
+    position: relative;
+    
+  
+}
+
+/* .imgsContainer .img0Section p::before {
+  position: absolute;
+  content: "Recommended Design";
+  bottom: -50%;
+  left: 0%;
+  color: rgba(255, 0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.5s;
+transform: translateY(-50%); 
+  text-shadow: none;
+  
+}
+.imgsContainer .img0Section:hover p:before {
+    color: white;
+} */
+
+@media screen and (min-width: 1120px) {
+  .imgsContainer .img0Section::before {
+    font-size: 20px;
+  }
+}
+
+.imgsContainer .img1Section {
+  display: flex;
+  flex-direction: row-reverse;
+  transition: 0.5s;
+}
+/* .imgsContainer .img1Section:hover {
 
 }
 
-.imgsContainer div{
-    width: 40%;
-    height: 40%;
-    margin: 5px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:100% 100%;
-    border:3px saddlebrown solid
+.imgsContainer .img2Section {
+
+} */
+
+.imgsContainer .img3Section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.imgsContainer>* div {
+  box-shadow: 4px 5px 8px 0px black;
 }
 
+.imgsContainer > * div:hover {
 
-
-.img0{
-    background-image: url(../../../../ai/outputs/images/0.png);
-}
-.img1{
-    background-image: url(../../../../ai/outputs/images/1.png);
-}
-.img2{
-    background-image: url(../../../../ai/outputs/images/2.png);
-}
-.img3{
-    background-image: url(../../../../ai/outputs/images/3.png);
+  cursor: pointer;
 
 }
 
+.imgsContainer div::after {
+  content: "Create 3D design";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff1e8;
+  padding: 10px;
+  transition: 0.3s;
+  translate: -50% -50%;
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
+  background-color: #405776bb;
+  text-align: center;
+  transform: scale(0%);
+  /* line-height: 25vw; */
+  border-radius: 10px ;
+}
 
+.imgsContainer > * :hover:after {
+  display: block;
 
+  transform: scale(100%);
+}
+
+.img0 {
+  background-image: url(../../../../ai/outputs/images/0.png);
+}
+.img1 {
+  background-image: url(../../../../ai/outputs/images/1.png);
+}
+.img2 {
+  background-image: url(../../../../ai/outputs/images/2.png);
+}
+.img3 {
+  background-image: url(../../../../ai/outputs/images/3.png);
+}
+
+/* 
 button {
 
     border-radius: 10px;
     padding: 10px;
     margin-top: 1.5%;
-    color: white;
-    background-color: #8b4513;
+    color: #9a6016;
+    background-color: #fff1e8;
     border:none;
     transition: 0.3s;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+     */
 
-}
+/* }
 
 button:hover {
-    scale: 120%;
-    box-shadow: 0px -1px 18px 7px #9a6016;
+    scale: 110%;
+    box-shadow: 0px 0px 11px 1px #9a6016;
     
-  }
+  } */
